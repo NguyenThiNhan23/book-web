@@ -1,0 +1,473 @@
+.login__block
+  {
+    position: relative;
+    height: 350px;
+    width: 400px;
+    border: 1px solid black;
+    border-radius: 9px;
+    background-color: antiquewhite;
+    margin-left: 450px;
+    margin-top: 50px;
+    
+  }
+
+/*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}*/
+
+body {
+  color: #333;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+main {
+  padding: 30px;
+}
+
+h1 {
+  margin-left: 90px;
+  font-size: 32px;
+}
+
+form {
+  margin-top: 20px;
+}
+
+.form__group {
+  margin-top: 16px;
+}
+
+.form__input {
+  display: block;
+}
+
+.form__label {
+  font-weight: 600;
+}
+
+.form__input {
+  width: 330px;
+  height: 36px;
+  margin-top: 8px;
+  padding: 4px 8px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  
+}
+
+.form__group .btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 28px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  color: #fff;
+  background: #eb4010;
+  cursor: pointer;
+  margin-left: 120px;
+  width: 150px;
+  height: 40px;
+}
+
+.form__group .btn_1 {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 28px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  color: #fff;
+  background: #979dee;
+  cursor: pointer;
+  margin-left: 15px;
+  width: 150px;
+  height: 40px;
+}
+
+.form__group .btn:hover {
+  opacity: 0.9;
+}
+.form__group .btn_1:hover {
+  opacity: 0.9;
+}
+
+.checkbox label {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  .checkbox label::before,
+  .checkbox label::after {
+    content: '';
+    display: inline-block;
+  }
+  
+  .checkbox label::before {
+    width: 12px;
+    height: 12px;
+    margin-right: 8px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .checkbox [type='checkbox']:checked ~ label::before {
+    background: #f05123;
+    border-color: #f05123;
+  }
+  
+  .checkbox [type='checkbox']:checked ~ label::after {
+    position: absolute;
+    top: 5px;
+    left: 2px;
+    width: 9px;
+    height: 5px;
+    border-left: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    rotate: -45deg;
+  }
+/*header*/
+
+/*header*/
+
+.homepage__header--heading
+{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 30px; 
+    color: black;
+    font-weight: bolder;
+}
+
+.header__block
+{
+    width: 100%;
+    height: 100px;
+    background-color:#FFE4B5;
+
+}
+
+.header__block--navigation
+{
+    display: flex;
+    width: 100%;
+    height: 70px;
+    background-color: #778899;
+
+}
+.navigation__element--menu
+{
+    width: 200px;
+    height: 60px;
+    margin-left: 130px;
+    padding: 10px;
+}
+.navigation__element--search
+{
+
+    width: 500px;
+    height: 60px;
+    margin-left: 150px;
+    padding-left: 20px;
+    
+}
+.navigation__element--user
+{
+    width: 200px;
+    height: 60px;
+    margin-left: 300px;
+    padding: 10px;
+}
+.navigation__element--cart
+{
+    width: 200px;
+    height: 60px;
+    margin-left: 30px;
+    padding: 10px;
+}
+i
+{
+  text-decoration: none;
+}
+
+.search__bar
+{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    margin-left: 50px;
+}
+.input__box
+{
+    position: relative;
+    padding: 15px;
+    width: 350px;
+
+}
+
+.menu
+{
+    margin-top: 20px;
+    color: black;
+}
+
+.user
+{
+    margin-top: 20px;
+    
+    color: black;
+}
+
+.cart
+{
+    margin-top: 20px;
+    color: black;
+}
+
+.flashale__display
+{
+    height: 120px;
+    width: 90px;
+    border-radius: 3px;
+}
+
+.book__name
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: black;
+    font-weight:bolder;
+    
+   
+}
+.book__price
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: black;
+    font-weight:bolder;
+    text-decoration: line-through;
+    
+}
+.book__discount
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: red;
+    font-weight:bolder;
+    animation-name: discount;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    
+}
+@keyframes discount
+{
+    from
+    {
+        color:red;
+    }
+    to
+    {
+        color: yellow;
+    }
+}
+h2
+{
+    text-align: center;
+
+}
+
+/*Phân lọại*/
+.classify__block--inside
+{
+    position:relative;
+    display: grid;
+    grid-template-columns: 120px 120px 120px 120px;
+    grid-gap: 90px;
+    height: 900px;
+    width: 85%;
+    padding : 10px;
+    background-color: #2fb5e2;
+    padding-top: 30px;
+    margin-left: 80px;
+    border-radius: 15px;
+    margin-top: 20px;
+}
+.classify__block--item
+{
+    height: 200px;
+    width: 200px;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    margin-left: 90px;
+
+}
+
+.classify__display
+{
+    height: 200px;
+    width: 150px;
+    border-radius: 3px;
+}
+.book__name1
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: black;
+    font-weight:bolder;
+    
+   
+}
+.book__price1
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: black;
+    font-weight:bolder;
+    text-decoration: line-through;
+    
+}
+.book__price2
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: black;
+    font-weight:bolder;
+    
+    
+}
+.book__discount1
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: red;
+    font-weight:bolder;
+    animation-name: discount;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+.body__block--left
+{
+    float: left;
+    height: 1000px;
+    width: 20%;
+    background-color:#337ab7;
+}
+ul
+{ 
+    margin-top:50px;
+    list-style-type: none; 
+}
+li
+{
+    height: 40px;
+    width: 200px;
+    background-color: #24b174;
+    padding-left: 20px;
+    padding-top: 30px;
+    border-radius: 9px;
+    margin-top:20px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: bolder;
+}
+.body__block--right
+{
+    float: right;
+    height: 1000px;
+    width: 80%;
+    background-color:lightgoldenrodyellow;
+}
+/*footer*/
+
+.footer__block
+{
+    float: bottom;
+    display: flex;
+    width: 100%;
+    height: 250px;
+    background-color:cadetblue;
+    margin-top: 50px;
+}
+.footer__element--logo
+{
+    padding-left: 20px;
+    padding-top: 5px;
+    height: 100px;
+    width: 100px;
+
+}
+.footer__element--introduce
+{
+    margin-left: 250px;
+
+}
+.footer__element--payment
+{
+    margin-left: 200px;
+
+}
+
+.footer__element--link
+{
+    margin-left: 200px;
+    
+}
+.footer__link--text
+{
+    margin-left: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    
+}
+.footer__link--cap
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bolder;
+}
+.footer__introduce--text
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+.footer__introduce--cap
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bolder;
+}
+.footer__payment--text
+{
+    margin-left: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+.footer__payment--cap
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bolder;
+}
+.footer__logo--cap
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+a
+{
+    text-decoration: none;
+    color:black
+}
+a:hover
+{    
+    color:aqua;
+
+}
+i:hover
+{
+    color:aliceblue
+}

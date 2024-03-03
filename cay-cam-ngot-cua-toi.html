@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cây cam ngọt của tôi</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <header>
+        <div>
+            <div class="header__block">
+                <img src="./images/bookstore_icon.jpg" alt="" style="width: 90px;height:90px; padding: 2px; padding-bottom: 5px;display: inline-block;">
+                <p style="font-family:Arial, Helvetica, sans-serif; display: inline-block; font-size: 50px; font-weight: bolder; padding-bottom: 2px;">BookingDom.com</p>
+            </div>
+        </div>
+        <div class="header__block--navigation">
+            <div class="navigation__element--menu">
+                <a href="http://127.0.0.1:5500/homepage.html"><i class="fa-solid fa-house menu"></i></a>
+            </div>
+            <div class="navigation__element--search">
+                <form class="search__bar">
+                        <input id="timkiem" class="input__box" type="text" placeholder="Tìm kiếm">
+                        <button type="submit" class="submit__button" onclick="search()"><i class="fa fa-search" aria-hidden="true"></i></button>
+                </form>
+            </div>
+            <div class="navigation__element--user">
+                <a href="http://127.0.0.1:5500/login_page.html"><i class="fa fa-user user" aria-hidden="true"></i></a>
+            </div>
+            <div class="navigation__element--cart">
+                <a href="http://127.0.0.1:5500/cart.html"><i class="fa fa-shopping-cart cart" aria-hidden="true"></i></a>
+            </div>
+        </div>
+    </header>
+    <body>
+    <div class="main-container">
+    <div class="container-1">
+        <div class="left-column">
+            <p><img src="./images/cay-cam-ngot-cua-toi.jpg"></p>
+        </div>
+        <div class="right-column">
+            <p class="name-book">Cây Cam Ngọt Của Tôi</p>
+            <div class="inf-book">
+
+                <div class="element-inf-book">
+
+                    <p>Nhà cung cấp: <b>Nhã Nam</b></p>
+                    <p>NXB: <b>NXB Hội Nhà Văn</b></p>
+                    <p>Tác giả: <b>José Mauro de Vasconcelos</b>
+                    </p>
+                </div>
+                <div class="element-inf-book">
+                    <p>Hình thức bìa: <b>Bìa Mềm</b></p>
+                    <p>Người dịch: <b>Nguyễn Bích Lan, Tô Yến Ly</b></p>
+                    <p>Số trang: <b>244</b></p>
+                </div>
+            </div>
+            <div class="price">
+                <p><span style="color:#D4A373; font-size: 40px; font-weight: 10px;">49.000 VNĐ</span></p>
+                <label for=quantityInput>Số lượng: </label>
+                <div class="quantity">
+                    <button id="decrease">-</button>
+                    <input type="number" id="quantityInput" value="1">
+                    <button id="increase">+</button>
+
+                </div>
+
+                
+
+            </div>
+            <div class="btn">
+                <button class="btn-them-vao-gio">Thêm vào giỏ
+                    hàng</button>
+                <button class="btn-mua">Mua ngay</button>
+            </div>
+        </div>
+    </div>
+    <div class="container-2">
+
+        <div class="book-introduction">
+            <p class="caption">Giới thiệu sách</p>
+            <p>
+                “Vị chua chát của cái nghèo hòa trộn với vị ngọt ngào khi khám phá ra những điều khiến cuộc đời này đáng
+                sống... một tác phẩm kinh điển của Brazil.” - Booklist
+            </p>
+            <div class="more-text">
+                <p>“Một cách nhìn cuộc sống gần như hoàn chỉnh từ con mắt trẻ thơ… có sức mạnh sưởi ấm và làm tan nát
+                    cõi lòng, dù người đọc ở lứa tuổi nào.” - The National</p>
+
+                <p>Hãy làm quen với Zezé, cậu bé tinh nghịch siêu hạng đồng thời cũng đáng yêu bậc nhất, với ước mơ lớn
+                    lên trở thành nhà thơ cổ thắt nơ bướm. Chẳng phải ai cũng công nhận khoản “đáng yêu” kia đâu nhé.
+                    Bởi vì, ở cái xóm ngoại ô nghèo ấy, nỗi khắc khổ bủa vây đã che mờ mắt người ta trước trái tim thiện
+                    lương cùng trí tưởng tượng tuyệt vời của cậu bé con năm tuổi.</p>   
+
+                 <p>Có hề gì đâu bao nhiêu là hắt hủi, đánh mắng, vì Zezé đã có một người bạn đặc biệt để trút nỗi lòng:
+                    cây cam ngọt nơi vườn sau. Và cả một người bạn nữa, bằng xương bằng thịt, một ngày kia xuất hiện,
+                    cho cậu bé nhạy cảm khôn sớm biết thế nào là trìu mến, thế nào là nỗi đau, và mãi mãi thay đổi cuộc
+                    đời cậu.</p>
+
+                <p>Mở đầu bằng những thanh âm trong sáng và kết thúc lắng lại trong những nốt trầm hoài niệm, Cây cam
+                    ngọt của tôi khiến ta nhận ra vẻ đẹp thực sự của cuộc sống đến từ những điều giản dị như bông hoa
+                    trắng của cái cây sau nhà, và rằng cuộc đời thật khốn khổ nếu thiếu đi lòng yêu thương và niềm trắc
+                    ẩn. Cuốn sách kinh điển này bởi thế không ngừng khiến trái tim người đọc khắp thế giới thổn thức, kể
+                    từ khi ra mắt lần đầu năm 1968 tại Brazil.</p>
+                <p>TÁC GIẢ:</p>
+                <p>JOSÉ MAURO DE VASCONCELOS (1920-1984) là nhà văn người Brazil. Sinh ra trong một gia đình nghèo ở
+                    ngoại ô Rio de Janeiro, lớn lên ông phải làm đủ nghề để kiếm sống. Nhưng với tài kể chuyện thiên
+                    bẩm, trí nhớ phi thường, trí tưởng tượng tuyệt vời cùng vốn sống phong phú, José cảm thấy trong mình
+                    thôi thúc phải trở thành nhà văn nên đã bắt đầu sáng tác năm 22 tuổi. Tác phẩm nổi tiếng nhất của
+                    ông là tiểu thuyết mang màu sắc tự truyện Cây cam ngọt của tôi. Cuốn sách được đưa vào chương trình
+                    tiểu học của Brazil, được bán bản quyền cho hai mươi quốc gia và chuyển thể thành phim điện ảnh.
+                    Ngoài ra, José còn rất thành công trong vai trò diễn viên điện ảnh và biên kịch.</p>
+            </div>
+            <div class="btn">
+                <button class="toggle-button">Xem thêm</button>
+            </div>
+        </div>
+
+
+       
+    </div>
+    <div class="container-3">
+        <div class="danh-gia">BÌNH LUẬN:</div>
+        <form id="feedbackForm">
+            <textarea id="danh-gia" type="text" cols="100" rows="5" placeholder="Thêm bình luận..."></textarea>
+            <button type="submit">Gửi góp ý</button>
+        </form>
+        <div id="feedbackDisplay" class="feedback-box"></div>
+    </div>
+</div>
+<footer>
+    <div class="footer__block"> 
+        <div class="footer__element--logo">
+            <img src="./images/bookstore_icon.jpg" style="height: 100px;width: 100px;border-radius: 9px">
+            <p class="footer__logo--cap">BooKingdom.com</p>
+        </div>
+        <div class="footer__element--introduce">
+            <p class="footer__introduce--cap">Giới thiệu</p><br/>
+            <a class="footer__introduce--text">Về chúng tôi</a>
+        </div>
+        <div class="footer__element--payment">
+            <p class="footer__payment--cap">Phương thức thanh toán</p>
+            <p class="footer__payment--text"><img src="./images/zalo-pay-logo-png-1.png" style="width:32px;height:32px;background-color: white; border-radius: 3px;"> Zalopay</p>
+            <p class="footer__payment--text"><img src="./images/logo-momo-png-1.png" style="width: 32px;height:32px;border-radius: 3px;"> Momo</p>
+        </div>
+        <div class="footer__element--link">
+            <p class="footer__link--cap">Liên kết</p><br/>
+            <p class="footer__link--text"><i class="fa-brands fa-facebook"></i> Facebook</p><br/>
+            <p class="footer__link--text"><i class="fa-brands fa-instagram"></i> Instagram</p><br/>
+            <p class="footer__link--text"><i class="fa-brands fa-pinterest"></i> Printerest</p><br/>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
+<script src="assets/js/cart.js"></script>
+<script src="assets/js/quantity-purchased.js"></script>
+<script src="assets/js/see-more.js"></script>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABC-Toeic-RC</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <header>
+        <div>
+            <div class="header__block">
+                <img src="./images/bookstore_icon.jpg" alt="" style="width: 90px;height:90px; padding: 2px; padding-bottom: 5px;display: inline-block;">
+                <p style="font-family:Arial, Helvetica, sans-serif; display: inline-block; font-size: 50px; font-weight: bolder; padding-bottom: 2px;">BookingDom.com</p>
+            </div>
+        </div>
+        <div class="header__block--navigation">
+            <div class="navigation__element--menu">
+                <a href="http://127.0.0.1:5500/homepage.html"><i class="fa-solid fa-house menu"></i></a>
+            </div>
+            <div class="navigation__element--search">
+                <form class="search__bar">
+                        <input id="timkiem" class="input__box" type="text" placeholder="Tìm kiếm">
+                        <button type="submit" class="submit__button" onclick="search()"><i class="fa fa-search" aria-hidden="true"></i></button>
+                </form>
+            </div>
+            <div class="navigation__element--user">
+                <a href="http://127.0.0.1:5500/login_page.html"><i class="fa fa-user user" aria-hidden="true"></i></a>
+            </div>
+            <div class="navigation__element--cart">
+                <a href="http://127.0.0.1:5500/cart.html"><i class="fa fa-shopping-cart cart" aria-hidden="true"></i></a>
+            </div>
+        </div>
+    </header>
+    <body>
+    <div class="main-container">
+    <div class="container-1">
+        <div class="left-column">
+            <p><img src="./images/abc-toeic.jpg"></p>
+        </div>
+        <div class="right-column">
+            <p class="name-book">ABC - Toeic - RC (Revised & Updated)</p>
+            <div class="inf-book">
+
+                <div class="element-inf-book">
+
+                    <p>Nhà cung cấp: <b>Cty Nhân Trí Việt</b></p>
+                    <p>NXB: <b>Tổng Hợp TPHCM</b></p>
+                    <p>Tác giả: <b>Park Hye Young, Jeon Ji Won</b>
+                    </p>
+                </div>
+                <div class="element-inf-book">
+                    <p>Hình thức bìa: <b>Bìa Mềm</b></p>
+                    <p>Ngôn Ngữ: <b>Tiếng Anh</b></p>
+                    <p>Số trang: <b>228</b></p>
+                </div>
+            </div>
+            <div class="price">
+                <p><span style="color:#D4A373; font-size: 40px; font-weight: 10px;">100.000 VNĐ</span></p>
+                <label for=quantityInput>Số lượng: </label>
+                <div class="quantity">
+                    <button id="decrease">-</button>
+                    <input type="number" id="quantityInput" value="1">
+                    <button id="increase">+</button>
+
+                </div>
+            </div>
+            <div class="btn">
+                <button class="btn-them-vao-gio" onclick="tinhtien()">Thêm vào giỏ hàng</button>
+                <button class="btn-mua">Mua ngay</button>
+            </div>
+        </div>
+    </div>
+    <div class="container-2">
+
+        <div class="book-introduction">
+            <p class="caption">Giới thiệu sách</p>
+            <p>Well begun is half done</p>
+            <p>ABC TOEIC Listening Comprehension and ABC TOEIC Reading Comprehension have been written for beginners whose ultimate aim is to take the TOEIC test.</p>
+            <p>ABC TOEIC Listening Comprehension and ABC TOEIC Reading Comprehension have been written for beginners whose ultimate aim is to take the TOEIC test.</p>
+            <p>Before you start using this set of books, I would like to remind you that TOEIC is not the kind of general English you have so far been familiar with. Most TOEIC related materials have special features in terms of their question format and business-oriented contexts. You should, therefore, familiarize yourself with the structure of the test and master some basic strategies to be able to achieve your goal.</p>
+            <div class="more-text">
+            <p>ABC TOEIC Reading Comprehension − new edition − is based on the updated TOEIC test version to meet your demand. The book is divided into two sections. Section 1 consists of 13 chapters which focus on fundamental grammar structures and vocabulary frequently found in TOEIC. You will find this section truly helpful, not only for your general English but also for your TOEIC training. Section 2 presents typical question types and text types which are most given in the TOEIC tests. Importantly, practical test-taking tips plus a wide range of practice activities in the book will provide you with a good preparation for your actual test.</p>
+            <p>ABC TOEIC Reading Comprehension can be used in class with the assistance of an instructor or for self-study.</p>
+            <p>Hopefully, you will find this book truly practical and helpful. As the saying goes “Well begun is half done”, you are actually having a good beginning with the assistance of this series. Do believe that you will achieve your expected goal soon. </p>
+            </div>
+            <div class="btn">
+                <button class="toggle-button">Xem thêm</button>
+            </div>
+        </div>
+
+
+        
+    </div>
+    <div class="container-3">
+        <div class="danh-gia">BÌNH LUẬN:</div>
+        <form id="feedbackForm">
+            <textarea id="danh-gia" type="text" cols="100" rows="5" placeholder="Thêm bình luận..."></textarea>
+            <button type="submit">Gửi góp ý</button>
+        </form>
+        <div id="feedbackDisplay" class="feedback-box"></div>
+    </div>
+    </div>
+    <footer>
+        <div class="footer__block"> 
+            <div class="footer__element--logo">
+                <img src="./images/bookstore_icon.jpg" style="height: 100px;width: 100px;border-radius: 9px">
+                <p class="footer__logo--cap">BooKingdom.com</p>
+            </div>
+            <div class="footer__element--introduce">
+                <p class="footer__introduce--cap">Giới thiệu</p><br/>
+                <a class="footer__introduce--text">Về chúng tôi</a>
+            </div>
+            <div class="footer__element--payment">
+                <p class="footer__payment--cap">Phương thức thanh toán</p>
+                <p class="footer__payment--text"><img src="./images/zalo-pay-logo-png-1.png" style="width:32px;height:32px;background-color: white; border-radius: 3px;"> Zalopay</p>
+                <p class="footer__payment--text"><img src="./images/logo-momo-png-1.png" style="width: 32px;height:32px;border-radius: 3px;"> Momo</p>
+            </div>
+            <div class="footer__element--link">
+                <p class="footer__link--cap">Liên kết</p><br/>
+                <p class="footer__link--text"><i class="fa-brands fa-facebook"></i> Facebook</p><br/>
+                <p class="footer__link--text"><i class="fa-brands fa-instagram"></i> Instagram</p><br/>
+                <p class="footer__link--text"><i class="fa-brands fa-pinterest"></i> Printerest</p><br/>
+            </div>
+        </div>
+    </footer>
+    </body>
+    </html>
+    <script src="assets/js/cart.js"></script>
+    <script src="assets/js/quantity-purchased.js"></script>
+    <script src="assets/js/see-more.js"></script>

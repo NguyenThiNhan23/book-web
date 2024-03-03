@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiếng Hàn</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <header>
+        <div>
+            <div class="header__block">
+                <img src="./images/bookstore_icon.jpg" alt="" style="width: 90px;height:90px; padding: 2px; padding-bottom: 5px;display: inline-block;">
+                <p style="font-family:Arial, Helvetica, sans-serif; display: inline-block; font-size: 50px; font-weight: bolder; padding-bottom: 2px;">BookingDom.com</p>
+            </div>
+        </div>
+        <div class="header__block--navigation">
+            <div class="navigation__element--menu">
+                <a href="http://127.0.0.1:5500/homepage.html"><i class="fa-solid fa-house menu"></i></a>
+            </div>
+            <div class="navigation__element--search">
+                <form class="search__bar">
+                        <input id="timkiem" class="input__box" type="text" placeholder="Tìm kiếm">
+                        <button type="submit" class="submit__button" onclick="search()"><i class="fa fa-search" aria-hidden="true"></i></button>
+                </form>
+            </div>
+            <div class="navigation__element--user">
+                <a href="http://127.0.0.1:5500/login_page.html"><i class="fa fa-user user" aria-hidden="true"></i></a>
+            </div>
+            <div class="navigation__element--cart">
+                <a href="http://127.0.0.1:5500/cart.html"><i class="fa fa-shopping-cart cart" aria-hidden="true"></i></a>
+            </div>
+        </div>
+    </header>
+    <body>
+    <div class="main-container">
+    <div class="container-1">
+        <div class="left-column">
+            <p><img src="./images/tieng-han-1.jpg"></p>
+        </div>
+        <div class="right-column">
+            <p class="name-book">Tiếng Hàn Tổng Hợp Dành Cho Người Việt - Sơ Cấp 1</p>
+            <div class="inf-book">
+
+                <div class="element-inf-book">
+
+                    <p>Nhà cung cấp: <b>MCBooks</b></p>
+                    <p>NXB: <b>Đại học Quốc Gia Hà Nội</b></p>
+                    <p>Tác giả: <b>Nhiều Tác Giả</b>
+                    </p>
+                </div>
+                <div class="element-inf-book">
+                    <p>Hình thức bìa: <b>Bìa Mềm</b></p>
+                    <p>Ngôn Ngữ: <b>Tiếng Việt</b></p>
+                    <p>Số trang: <b>378</b></p>
+                </div>
+            </div>
+            <div class="price">
+                <p><span style="color:#D4A373; font-size: 40px; font-weight: 10px;">241.200 VNĐ</span></p>
+                <label for=quantityInput>Số lượng: </label>
+                <div class="quantity">
+                    <button id="decrease">-</button>
+                    <input type="number" id="quantityInput" value="1">
+                    <button id="increase">+</button>
+
+                </div>
+
+               
+
+            </div>
+            <div class="btn">
+                <button class="btn-them-vao-gio">Thêm vào giỏ
+                    hàng</button>
+                <button class="btn-mua">Mua ngay</button>
+            </div>
+        </div>
+    </div>
+    <div class="container-2">
+
+        <div class="book-introduction">
+            <p class="caption">Giới thiệu sách</p>
+            <p>Tiếng Hàn Tổng Hợp Dành Cho Người Việt Nam - Sơ Cấp 1</p>
+            <p>Trong những năm gần đây, nhu cầu học tiếng Hàn và tìm hiểu về văn hóa Hàn Quốc đang có xu hướng tăng lên. Người học tiếng Hàn rất mong muốn có được một bộ giáo trình chuẩn, được biên soạn một cách tỉ mỉ và hữu ích nhất.</p>
+            <p>Giáo trình tiếng Hàn tổng hợp lần đầu tiên được trao bản quyền chính thức tại Việt Nam</p>
+            <p>Hiểu được điều đó, ngày 4-7, Đại diện chính phủ Hàn Quốc, ngài Woo Hyeong Min – Trưởng đại diện Văn phòng Quỹ giao lưu Quốc tế HQ tại Việt Nam cùng GS.TS.NGƯT Mai Ngọc Chừ – Chủ tịch Hội Nghiên cứu khoa học về Hàn Quốc của Việt Nam (KRAV) đã trao quyết định cho phép Công ty Cổ phần sách MCBooks của Việt Nam được xuất bản cuốn sách này tại thị trường Việt Nam. Và đây chính là bộ giáo trình tiếng Hàn tổng hợp đầu tiên có bản quyền chính thức có mặt tại Việt Nam.
+                Cũng theo ông Woo Hyeong Min, Thực tế đây là bộ giáo trình chính thống mà tất cả người học tiếng Hàn tại Việt Nam cần sử dụng. Tuy nhiên nhiều năm qua bộ sách đến tay người dùng đều là sách lậu nên chưa đạt được kết quả mà chính phủ Hàn muốn mang tới Việt Nam. Do đó Chính phủ Hàn Quốc đã quyết  định tìm 1 đơn vị xuất bản uy tín của Việt Nam để giúp họ mang đến cho người học những cuốn sách tiếng Hàn chất lượng tốt với giá cả hợp lý. 
+                Bộ giáo trình được Hội nghiên cứu khoa học Hàn Quốc của Việt Nam biên soạn và hiệu đính.</p>
+            <div class="more-text">
+            <p>Cũng theo ông Woo Hyeong Min, Thực tế đây là bộ giáo trình chính thống mà tất cả người học tiếng Hàn tại Việt Nam cần sử dụng. Tuy nhiên nhiều năm qua bộ sách đến tay người dùng đều là sách lậu nên chưa đạt được kết quả mà chính phủ Hàn muốn mang tới Việt Nam. Do đó Chính phủ Hàn Quốc đã quyết  định tìm 1 đơn vị xuất bản uy tín của Việt Nam để giúp họ mang đến cho người học những cuốn sách tiếng Hàn chất lượng tốt với giá cả hợp lý.</p>
+            <p>Bộ giáo trình được Hội nghiên cứu khoa học Hàn Quốc của Việt Nam biên soạn và hiệu đính.</p>  
+            <p>Bộ giáo trình sẽ giúp nâng cao hiệu quả trong việc sử dụng ngôn ngữ Hàn sau tiếng mẹ đẻ và tiếng Anh, là nền tảng giúp người lao động Việt Nam nhận được những vị trí làm việc cao trong doanh nghiệp Hàn Quốc. Đây cũng là cách để thúc đẩy quan hệ hợp tác về văn hoá và giáo dục giữa hai nước trong thời gian tới.</p>
+            <p>Giới thiệu cuốn Giáo trình tiếng Hàn tổng hợp dành cho người Việt Nam – Sơ cấp 1</p>
+            <p>Giáo trình tiếng Hàn tổng hợp dành cho người Việt Nam – Sơ cấp 1 được biên soạn dành cho người  Việt Nam muốn học tiếng Hàn ở trình độ sơ cấp. Sách được biên soạn nhằm hướng tới việc sử dụng được trong các tiết học tiếng Hàn tại giảng đường đại học nên mỗi bài học được chia thành nhiều phần như: Lý thuyết cơ bản gồm từ vựng và cấu trúc ngữ pháp; phần luyện tập theo 4 kỹ năng giao tiếp như: Nghe – Nói – Đọc – Viết, phần luyện phát âm, phần tìm hiểu văn hóa…</p>
+            <p>Các chủ đề trong sách được sắp xếp một cách có hệ thống và liên quan chặt chẽ với nhau. Giáo trình tiếng Hàn tổng hợp được biên soạn kèm theo một cuốn sách bài tập hỗ trợ giúp người học ôn tập kỹ hơn và có thể luyện tập nâng cao trong những trường hợp cần thiết.</p>
+            <p>Nội dung trong Giáo trình tiếng Hàn tổng hợp – Sơ cấp 1</p>
+            <p>2 cuốn sách trong bộ Sơ cấp được xây dựng với 30 bài khóa và bảng chữ cái. Trong đó quyển 1 gồm phần bảng chữ cái và 15 bài đầu. Học hết quyển 1, bạn sẽ học đến quyển sơ cấp 2 với 15 bài còn lại.</p>
+            <p>Cấu trúc tổng thể của giáo trình được xây dựng theo các chủ đề; mỗi chủ đề được liên kết thống nhất với một hệ thống các từ vựng và cấu trúc ngữ pháp cơ bản, bài tập ứng dụng, kỹ năng và tìm hiểu văn hóa.</p>
+            <p>Trong mỗi bài học, nội dung học được chia thành các phần như: luyện từ vựng, luyện ngữ pháp cơ bản, luyện tập kỹ năng nghe – nói – đọc – viết, luyện phát âm, tìm hiểu văn hóa của đất nước Hàn Quốc xinh đẹp. Và kết thúc mỗi bài đều có thêm bảng từ mới xuất hiện trong bài học.</p>
+            <p>Phần cuối của sách, các tác giả đưa ra hệ thống từ mới được sắp xếp theo thứ tự của bảng chữ cái. Đây là những từ không xuất hiện trong phần ngữ pháp, từ vựng cơ bản; nhưng lại xuất hiện nhiều ở phần luyện tập của từng bài.</p>
+            <p>Học Giáo trình tiếng Hàn tổng hợp cùng hệ thống app MCBooks tiện dụng mọi lúc mọi nơi</p>
+            <p>Các cuốn trong bộ Giáo trình tiếng Hàn tổng hợp đều được hỗ trợ kèm theo app MCBooks hiện đại. Tất cả những tài liệu cần thiết trong quá trình học bài khóa, bài nghe đều được tích hợp trên app MCBooks. Người học chỉ cần tải app, quét mã là có thể học tiếng Hàn, luyện tập phản xạ nghe – nói hay thực hành các bài tập trong sách giáo trình mọi lúc mọi nơi một cách dễ dàng, tiện dụng. Nếu người học khai thác triệt để tài liệu luyện nghe và bài tập luyện tập trong app, kết hợp song song với học giáo trình trong sách in thì chắc chắn việc học tập sẽ đạt hiệu quả cao hơn rất nhiều, nhanh chóng cải thiện khả năng nói tiếng Hàn và ngày càng yêu thích thứ ngôn ngữ tuyệt vời này.</p>
+            <p>Có thể nói, Giáo trình tiếng Hàn tổng hợp Sơ cấp 1 nằm trong bộ giáo trình được xây dựng hết sức công phu trên cơ sở những nghiên cứu sâu sắc môi trường học tiếng Hàn tại Việt Nam, cũng như nghiên cứu chiến lược học tiếng Hàn của người Việt. Giáo trình được biên soạn dựa trên những kinh nghiệm thực tế và nền tảng lý luận sư phạm được tích lũy từ những chuyên gia dạy tiếng Hàn hàng đầu. Vì vậy,  bộ Giáo trình tiếng Hàn tổng hợp phiên bản mới – Sơ cấp 1 là sự lựa chọn hoàn hảo cho những người yêu thích và muốn chinh phục thứ ngôn ngữ này.</p>
+            </div>
+            <div class="btn">
+                <button class="toggle-button">Xem thêm</button>
+            </div>
+        </div>
+
+
+        
+    </div>
+    <div class="container-3">
+        <div class="danh-gia">BÌNH LUẬN:</div>
+        <form id="feedbackForm">
+            <textarea id="danh-gia" type="text" cols="100" rows="5" placeholder="Thêm bình luận..."></textarea>
+            <button type="submit">Gửi góp ý</button>
+        </form>
+        <div id="feedbackDisplay" class="feedback-box"></div>
+    </div>
+    </div>
+    <footer>
+        <div class="footer__block"> 
+            <div class="footer__element--logo">
+                <img src="./images/bookstore_icon.jpg" style="height: 100px;width: 100px;border-radius: 9px">
+                <p class="footer__logo--cap">BooKingdom.com</p>
+            </div>
+            <div class="footer__element--introduce">
+                <p class="footer__introduce--cap">Giới thiệu</p><br/>
+                <a class="footer__introduce--text">Về chúng tôi</a>
+            </div>
+            <div class="footer__element--payment">
+                <p class="footer__payment--cap">Phương thức thanh toán</p>
+                <p class="footer__payment--text"><img src="./images/zalo-pay-logo-png-1.png" style="width:32px;height:32px;background-color: white; border-radius: 3px;"> Zalopay</p>
+                <p class="footer__payment--text"><img src="./images/logo-momo-png-1.png" style="width: 32px;height:32px;border-radius: 3px;"> Momo</p>
+            </div>
+            <div class="footer__element--link">
+                <p class="footer__link--cap">Liên kết</p><br/>
+                <p class="footer__link--text"><i class="fa-brands fa-facebook"></i> Facebook</p><br/>
+                <p class="footer__link--text"><i class="fa-brands fa-instagram"></i> Instagram</p><br/>
+                <p class="footer__link--text"><i class="fa-brands fa-pinterest"></i> Printerest</p><br/>
+            </div>
+        </div>
+    </footer>
+    </body>
+    </html>
+    <script src="assets/js/cart.js"></script>
+    <script src="assets/js/quantity-purchased.js"></script>
+<script src="assets/js/see-more.js"></script>

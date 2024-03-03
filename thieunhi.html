@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Truyện tranh</title>
+    <link rel="stylesheet" href="assets/css/phanloai.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <div>
+            <div class="header__block">
+                <img src="./images/bookstore_icon.jpg" alt="" style="width: 6%; padding: 2px; padding-bottom: 5px;">
+                <p style="font-family:Arial, Helvetica, sans-serif;display: inline-block; font-size: 50px; font-weight: bolder; padding-bottom: 2px;">BookingDom.com</p>
+            </div>
+        </div>
+        <div class="header__block--navigation">
+            <div class="navigation__element--menu">
+                <a href="http://127.0.0.1:5500/homepage.html"><i class="fa-solid fa-house menu"></i></a>
+            </div>
+            <div class="navigation__element--search">
+                <form class="search__bar">
+                        <input id="timkiem" class="input__box" type="text" placeholder="Tìm kiếm">
+                        <button type="submit" class="submit__button" onclick="search()"><i class="fa fa-search" aria-hidden="true"></i></button>
+                </form>
+            </div>
+            <div class="navigation__element--user">
+                <a href="http://127.0.0.1:5500/login_page.html"><i class="fa fa-user user" aria-hidden="true"></i></a>
+            </div>
+            <div class="navigation__element--cart">
+                <a href="http://127.0.0.1:5500/cart.html"><i class="fa fa-shopping-cart cart" aria-hidden="true"></i></a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="body__block--left">
+            <ul>
+                <li><a href="http://127.0.0.1:5500/tieuthuyet.html">Tiểu thuyết</a></li>
+                <li><a href="http://127.0.0.1:5500/sgk.html">Sách giáo khoa</a></li>
+                <li><a href="http://127.0.0.1:5500/ngoaingu.html">Sách ngoại ngữ</a></li>
+                <li><a href="http://127.0.0.1:5500/thieunhi.html">Truyện tranh</a></li>
+            </ul>
+        </div>
+        <div class="body__block--right">
+            <div class="classify__block--inside">
+                <div class="classify__block--item">
+                    <img src="./images/ga-to-di-hoc.jpg" class="classify__display">
+                    <p class="book__name"><a href="ga-to-di-hoc.html">Gà tơ đi học</a></p>
+                </div>
+                <div class="classify__block--item">
+                    <img src="./images/bu-bu-ngan-nap.jpg" class="classify__display">
+                    <p class="book__name"><a href="bubu-ngan-nap.html">BuBu ngăn nắp</a></p>
+                </div>
+                <div class="classify__block--item">
+                    <img src="./images/fire-force.jpg" class="classify__display">
+                    <p class="book__name"><a href="fire force.html">Fire force</a></p>
+                </div>
+                <div class="classify__block--item">
+                    <img src="./images/chu-thuat-hoi-chien_ban-thuong_bia_card_tap-17.jpg" class="classify__display">
+                    <p class="book__name"><a href="chu-thuat-hoi-chien.html">Chú thuật hồi chiến</a></p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer__block"> 
+            <div class="footer__element--logo">
+                <img src="./images/bookstore_icon.jpg" style="height: 100px;width: 100px;border-radius: 9px">
+                <p class="footer__logo--cap">BooKingdom.com</p>
+            </div>
+            <div class="footer__element--introduce">
+                <p class="footer__introduce--cap">Giới thiệu</p><br/>
+                <a class="footer__introduce--text">Về chúng tôi</a>
+            </div>
+            <div class="footer__element--payment">
+                <p class="footer__payment--cap">Phương thức thanh toán</p>
+                <p class="footer__payment--text"><img src="./images/zalo-pay-logo-png-1.png" style="width:32px;height:32px;background-color: white; border-radius: 3px;"> Zalopay</p>
+                <p class="footer__payment--text"><img src="./images/logo-momo-png-1.png" style="width: 32px;height:32px;border-radius: 3px;"> Momo</p>
+            </div>
+            <div class="footer__element--link">
+                <p class="footer__link--cap">Liên kết</p><br/>
+                <p class="footer__link--text"><i class="fa-brands fa-facebook"></i> Facebook</p><br/>
+                <p class="footer__link--text"><i class="fa-brands fa-instagram"></i> Instagram</p><br/>
+                <p class="footer__link--text"><i class="fa-brands fa-pinterest"></i> Printerest</p><br/>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+
+<script src="assets/js/cart.js"></script>
